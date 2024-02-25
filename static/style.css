@@ -1,0 +1,146 @@
+/* Existing styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url("resized_old_recipes_theme.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column; /* Updated for vertical alignment */
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    color: #56433D;
+    background-color: rgba(86, 67, 61);
+}
+
+header, .search-container, .content-container, footer {
+    position: relative;
+    z-index: 10; /* Make sure content is above the blurred background */
+}
+
+.content-wrapper {
+    flex: 1; /* Allows the content wrapper to expand */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures it takes up at least the height of the viewport */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Added space between header and search container */
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+/* New styles for the search container, input field, and button */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#recipeName {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #56433D;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between the text field and button */
+}
+
+#generateButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d17b5d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#generateButton:hover {
+    background-color: #b96548; /* Slightly darker on hover */
+}
+
+/* Existing styles... */
+
+/* New styles for content container, recipe details, and recipe image */
+
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on preference */
+    margin: 30px;
+    padding: 0 20px;
+}
+
+.recipe-details {
+    flex: 3; /* Takes up more space */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-right: 20px; /* Space between details and image */
+    text-align: left;
+}
+
+.recipe-details h2 {
+    margin-top: 0;
+}
+
+.recipe-image {
+    flex: 1; /* Takes up less space, adjust as needed */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-image img {
+    width: 100%; /* Adjust based on preference */
+    max-width: 300px; /* Adjust based on preference */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Existing styles... */
+
+/* New styles for the footer */
+
+footer {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    font-family: 'Times New Roman', serif;
+    color: #56433D;
+    position: relative; /* Adjust if needed, can be static if using flex method */
+}
+
+footer a {
+    color: #d17b5d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
