@@ -1,14 +1,3 @@
----
-title: RAG LLM
-emoji: 🏆
-colorFrom: gray
-colorTo: green
-sdk: docker
-pinned: false
----
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
-
 # Old Recipes Finder: RAG-LLM Demo Project
 
 Welcome to the Old Recipes Finder, an application that brings the culinary wisdom of the past into the present through an interactive and user-friendly interface. This RAG-LLM Demo Project utilizes machine learning to process and retrieve historical recipes from a PDF book of old recipes from the Chicago Women's Club of 1887.
@@ -19,7 +8,7 @@ The Old Recipes Finder application employs a multi-stage process involving data 
 
 ## How It Works
 
-![FLow Map](/blob/main/resized_old_recipes_theme.png)
+![FLow Map](Flowchart.jpg)
 
 1. **Data Source:** It starts with a PDF book of historical recipes.
 2. **Data Cleaning:** The content is standardized using LLM.
