@@ -2,6 +2,8 @@
 
 Welcome to the Old Recipes Finder, an application that brings the culinary wisdom of the past into the present through an interactive and user-friendly interface. This RAG-LLM Demo Project utilizes machine learning to process and retrieve historical recipes from a PDF book of old recipes from the Chicago Women's Club of 1887.
 
+Hugging Face Demo: https://huggingface.co/spaces/sarat2hf/RAG_LLM
+
 ## Application Overview
 
 The Old Recipes Finder application employs a multi-stage process involving data cleaning, processing, structuring, and retrieval augmented by language models (LLM) to deliver precise recipe information to users. The system relies on a vector database of recipe embeddings to match user queries with the most relevant historical recipes.
